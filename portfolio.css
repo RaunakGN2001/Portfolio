@@ -33,6 +33,10 @@
 
 /* general styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body{
     background: white;
