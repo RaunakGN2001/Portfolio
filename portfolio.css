@@ -191,6 +191,7 @@ a:hover {
     background: #40394A;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .section__title--services {
@@ -220,6 +221,8 @@ a:hover {
     margin: 0 auto;
 }
 
+
+
 @media(min-width: 800px) {
     .services {
         display: grid;
@@ -228,10 +231,26 @@ a:hover {
 
     .service {
         margin: 2em;
+        min-height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 200ms ease-in-out;
+
     }
 
     .service > h3 {
         text-align: center;
+    }
+
+    .service>p {
+        text-align: center;
+    }
+
+    .service:hover {
+        background: black;
+        border: 2px solid white;
+        /* max-height: 296px; */
+        cursor: pointer;
+
     }
 
 }
@@ -279,6 +298,7 @@ a:hover {
     }
 }
 .my-work__container {
+    position: relative;
     background-color: #40394A;
     color: white;
 }
@@ -454,20 +474,56 @@ a:hover {
     opacity:  0.9;
     padding: 2em;
 }
-
+/* 
 .intro__wrapper {
     background: url(./Images/bg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+*/
 .about-me__wrapper {
-    background: url(./Images/bg3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+} 
+
+/* shape divider svg  */
+
+.custom-shape-divider-top-1629527679 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
+.custom-shape-divider-top-1629527679 svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 101px;
+}
 
+.custom-shape-divider-top-1629527679 .shape-fill {
+    fill: #FFFFFF;
+}
 
+/* ----------------------- */
 
+.custom-shape-divider-top-1629529409 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1629529409 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 104px;
+}
+
+.custom-shape-divider-top-1629529409 .shape-fill {
+    fill: #FFFFFF;
+}
