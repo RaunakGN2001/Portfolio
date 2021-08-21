@@ -80,7 +80,8 @@ strong{
 }
 
 .intro__img {
-    box-shadow: var(--bs);
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     border-radius: 5px;
 }
 
@@ -263,6 +264,10 @@ a:hover {
     font-weight: var(--fw-bold);
 }
 
+.about-me__img {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -292,6 +297,8 @@ a:hover {
         box-shadow: var(--bs);
         position: relative;
         max-height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        
     }
     .about-me__body {
         grid-area: text;
