@@ -534,3 +534,21 @@ a:hover {
 .custom-shape-divider-top-1629529409 .shape-fill {
     fill: #FFFFFF;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+.card-title {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    padding: 10px;
+}
+
+.card-text {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-body);
+    padding: 10px
+}
