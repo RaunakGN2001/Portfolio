@@ -16,6 +16,7 @@
     --fsh2_5Mobile: 25px;
     --fs2_7Mobile: 30px;
     --fspara: 15px;
+    --fw800: 800;
 }
 
 
@@ -125,6 +126,11 @@ body {
     font-size: var(--fsh2Mobile);
     font-weight: var(--fw300);
     /* margin-left: 1rem; */
+}
+
+.heading_back {
+    display: none;
+    letter-spacing: 8px;
 }
 
 .about_info_heading {
@@ -440,6 +446,7 @@ body {
         --fw300: 300;
         --fw400: 400;
         --fw500: 500;
+        --fw800: 800;
         --fsh3Mobile: 25px;
         --fsh1Mobile: 100px;
         --fsh2Mobile: 80px;
@@ -465,7 +472,9 @@ body {
         margin-bottom: 2rem;
         height: 90vh;
     }
-
+    .intro_heading {
+        position: relative;
+    }
     .intro_desc {
         display: flex;
     }
@@ -482,7 +491,6 @@ body {
         margin-left: 6rem;
         font-weight: var(--fw300);
     }
-
 
 
     /* about me  */
@@ -503,6 +511,18 @@ body {
         margin-right: 3rem;
     }
 
+    .heading_back {
+        display: block;
+        font-family: var(--ff_heading);
+        font-size: var(--fsh1Mobile);
+        font-weight: var(--fw800);
+        color: #9D9D9D;
+        position: absolute;
+        transform: translateY(30px);
+        opacity: 0.2;
+        left: 8rem;
+    }
+
 
     
 
@@ -518,6 +538,11 @@ body {
         background-color: #F7F7F7;
     }
 
+    .heading_back_tech {
+        transform: translateY(-1.25em);
+        left: 8rem;
+    }
+
 
     /* education  */
     .education {
@@ -525,6 +550,10 @@ body {
     }
     .education_heading {
         margin-bottom: 3rem;
+    }
+
+    .heading_back_edu {
+        transform: translateY(-125px);
     }
 
 
@@ -536,6 +565,10 @@ body {
 
     .experience_heading {
         margin-bottom: 3rem;
+    }
+
+    .heading_back_exp {
+        transform: translateY(-120px);  
     }
 
 
@@ -562,6 +595,10 @@ body {
         margin-bottom: 2rem;
     }
 
+    .heading_back_pro {
+        transform: translateY(-145px);
+    }
+
 
 
     /* contact  */
@@ -576,5 +613,9 @@ body {
 
     .contact_subtitle {
         margin-bottom: 1.5rem;
+    }
+
+    .heading_back_con {
+        transform: translateY(-125px);
     }
 }
