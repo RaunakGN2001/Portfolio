@@ -11,16 +11,20 @@
     --fw400: 400;
     --fw500: 500;
     --fsh3Mobile: 25px;
-    --fsh1Mobile: 100px;
-    --fsh2Mobile: 80px;
-    --fsh2_5Mobile: 35px;
-    --fs2_7Mobile: 40px;
-    --fspara: 20px;
+    --fsh1Mobile: 70px;
+    --fsh2Mobile: 55px;
+    --fsh2_5Mobile: 25px;
+    --fs2_7Mobile: 30px;
+    --fspara: 15px;
 }
 
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 3em;
@@ -65,8 +69,10 @@ body {
     align-items: center;
 }
 .intro_img {
-    width: 400px;
-    height: auto;
+    /* max-width: 400px; */
+    max-width: 80%;
+    max-height: 80%;
+    /* height: auto; */
     border-radius: 50%;
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -101,6 +107,8 @@ body {
     font-weight: var(--fw400);
     /* margin-left: 1rem; */
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -426,6 +434,20 @@ body {
     
 
 
+    :root {
+        --ff_heading : 'Poppins', sans-serif;
+        --fw200: 200;
+        --fw300: 300;
+        --fw400: 400;
+        --fw500: 500;
+        --fsh3Mobile: 25px;
+        --fsh1Mobile: 100px;
+        --fsh2Mobile: 80px;
+        --fsh2_5Mobile: 35px;
+        --fs2_7Mobile: 40px;
+        --fspara: 20px;
+    }
+
     body {
         padding-left: 7rem;
         padding-right: 7rem;
@@ -446,6 +468,10 @@ body {
 
     .intro_desc {
         display: flex;
+    }
+    .intro_img {
+        max-width: 60%;
+        max-height: 60%;
     }
 
     .intro_heading_surname {
