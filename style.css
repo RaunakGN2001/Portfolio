@@ -451,6 +451,16 @@ body {
 
 
 
+.card {
+    border: none;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
 @media screen and (min-width:1000px) {
     
 
@@ -503,7 +513,9 @@ body {
     }
 
     .intro_subtitle {
-        margin-left: 6rem;
+        position: relative;
+        left: -15px;
+        /* margin-left: 6rem; */
         font-weight: var(--fw300);
     }
 
@@ -649,4 +661,55 @@ body {
     .heading_back_con {
         transform: translateY(-125px);
     }
+
+
+
+
+    /******** Timeline changes  *******/
+
+    .timeline {
+        background: var(--primary-color);
+        /* margin: 20px auto; */
+        padding: 20px;
+    }
+
+    .outer {
+        border-left: 2px solid #333;
+    }
+
+    .card {
+        position: relative;
+        margin: 0 0 20px 20px;
+        padding: 10px;
+        /* background: gray; */
+        /* color: gray; */
+        border: none;
+        border-radius: 8px;
+        max-width: 1000px;
+    }
+
+  /* .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  } */
+
+    .title {
+        /* color: orangered; */
+        position: relative;
+    }
+  
+    .title::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: rgb(53, 121, 246);
+        border-radius: 999px;
+        left: -39px;
+        /* border: 1px solid rgb(53, 121, 246); */
+        border: 1px solid black;
+    }
+
 }
+
